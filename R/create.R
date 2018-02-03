@@ -33,6 +33,11 @@ create_package <- function(path,
 
   use_directory("R")
   use_directory("man")
+  use_directory("app/dev-app")
+  use_directory("app/prod-app")
+  use_directory("app/data")
+  use_directory("app/data-set-up")
+
   use_description(fields = fields)
   use_namespace()
 

@@ -2,9 +2,12 @@
 % Please edit documentation in R/r.R
 \name{use_r}
 \alias{use_r}
-\title{Create a new R file}
+\alias{use_rmd}
+\title{use_r() creates a new .R file in the R directory and use_rmd() creates a new .Rmd file in the app/data-set-up directory.}
 \usage{
 use_r(name = NULL)
+
+use_rmd(name = NULL)
 }
 \arguments{
 \item{name}{File name, without extension; will create if it doesn't already
@@ -12,7 +15,7 @@ exist. If not specified, and you're currently in a test file, will guess
 name based on test name.}
 }
 \description{
-Create a new R file
+use_r() creates a new .R file in the R directory and use_rmd() creates a new .Rmd file in the app/data-set-up directory.
 }
 \seealso{
 \code{\link[=use_test]{use_test()}}
